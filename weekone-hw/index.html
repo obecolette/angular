@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="store">
+<head>
+	<meta charset="UTF-8">
+	<title>Angular One - Week One</title>
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+	
+
+	
+	<h1>Read List</h1>
+	
+	<div ng-cloak ng-controller="StoreController as store">
+		<div 
+			class="book" 
+			ng-repeat="book in store.books track by $index">
+			
+			<h1>{{book.title}}</h1>
+
+			<h2>{{book.author}}</h2>
+			
+			<a href="{{book.buyNow}}" target="_blank">
+				<img ng-src="{{book.bookCover}}" width="200px">
+			</a>
+		</div>
+	</div>
+
+	<script src="bower_components/angular/angular.js"></script>
+	<script src="app.js"></script>
+	
+</body>
+</html>

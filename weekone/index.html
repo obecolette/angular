@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="store">
+<head>
+	<meta charset="UTF-8">
+	<title>Angular One - Week One</title>
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+	
+	
+	<h1>Angular - Week One</h1>
+	<!-- <p>My Math: {{ '1' + 4 + 3 }}</p>
+	<p>My String: {{ 'Hello' + 'World' }}</p> -->
+	
+	<div ng-controller="StoreController as store">
+		<div 
+			class="product" 
+			ng-repeat="product in store.products track by $index"
+			ng-hide="store.product.soldOut">
+			Item #{{ $index }}
+			<!-- {{ store.product }}
+			{{ reddit.product.data ? 'hi' : 'bye' }}
+			{{ store.product }} -->
+			<h1 ng-bind="product.name"></h1>
+
+			<h2> 
+				$<span ng-bind="product.price"></span>
+			</h2>
+			
+			<p ng-bind="product.description"></p>
+
+			<button nd-if="product.canPurchase"> Add to Cart </button>
+		</div>
+	</div>
+
+	<script src="bower_components/angular/angular.js"></script>
+	<script src="app.js"></script>
+	
+</body>
+</html>
