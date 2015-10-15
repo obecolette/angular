@@ -32,7 +32,7 @@
 	{
 		title: 'Sway: The Irresistible Pull of Irrational Behavior',
 		author: 'Ori Brafman + Rom Brafman',
-		bookCover: 'This is the bling!',
+		bookCover: 'http://ecx.images-amazon.com/images/I/41aQIJ3mOqL._SX323_BO1,204,203,200_.jpg',
 		buyNow: 'http://www.amazon.es/Sway-Irresistible-Pull-Irrational-Behavior/dp/0385530609'
 	},
 	{
